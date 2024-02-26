@@ -1,0 +1,53 @@
+.LiveResultSection {
+    >.Title {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    >.Time {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    >.GameSection {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+
+        >.Game {
+            font: italic small-caps bold 30px Georgia, Garamond, serif;
+        }
+
+        >.Result {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        >.Waiting {
+            font-size: 15px;
+            text-align: center;
+            color: orange;
+        }
+
+        >.Late {
+            font-size: 15px;
+            text-align: center;
+        }
+        >.Btn {}
+    }
+    >.BtnLast {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+
+        >button {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}

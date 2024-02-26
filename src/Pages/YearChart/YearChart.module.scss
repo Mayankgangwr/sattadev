@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+
+    >.scrollingText {
+        white-space: nowrap;
+        animation: scroll 30s linear infinite;
+        color: #0e0e0e;
+        font-weight: bold;
+        font-size: 14px;
+        display: inline-block;
+    }
+}
+
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+.HistoryChart {
+    >.Heading {
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+}
+.Column {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    
+    >.GameName {
+        font-size: 14px;
+    }
+
+    >.GameChart {
+        font-size: 17px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,199 @@
+.error {
+  background-color: red;
+
+  >p {
+    font-size: 5px;
+  }
+}
+
+.DarkAdsCard {
+  position: relative;
+  background-color: #e4e4e4;
+
+  >.adscontent {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    //color: yellow; //for some time
+  }
+
+
+  >.adsowner {
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    //color: white; //for some time
+  }
+
+  >.adsPersonalcontent {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+  >.adsPersonalowner {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    //color: white; //for some time
+  }
+
+  // >.adsbtn{
+  //   >.call{
+  //     background-color: ForestGreen;
+  //     color: white;
+  //     padding: 10px;
+  //     border: none;
+  //     border-radius: 8px;
+  //     font-weight: bold;
+  //     cursor: pointer;
+  //     margin-right: 10px;
+  //     text-decoration: none;
+  //     display: inline-block;
+  //     text-align: center;
+  //     line-height: 20px;
+  //     width: 110px;
+  //     height: 20px;
+  //   }
+  //   >.whatsapp{
+  //     background-color: red;
+  //     color: white;
+  //     padding: 10px;
+  //     border: none;
+  //     border-radius: 8px;
+  //     font-weight: bold;
+  //     cursor: pointer;
+  //     text-decoration: none;
+  //     display: inline-block;
+  //     text-align: center;
+  //     line-height: 20px;
+  //     width: 110px;
+  //     height: 20px;
+  //   }
+  // } // //for some time
+}
+
+.LightAdsCard {
+  >.headerfooter {
+    text-align: center;
+    background-color: #555;
+  }
+
+  >.contentarea {
+    background-color: Ivory;
+    padding-bottom: 25px;
+
+    >.adsbody {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: green;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    >.director {
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    >.adscontent {
+      font-size: 15px;
+      font-weight: bold;
+      color: blue;
+      text-align: center;
+    }
+
+    >.adsowner {
+      font-size: 18px;
+      font-weight: bold;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background: linear-gradient(to right, #ff5733, #33cc33);
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+    }
+
+    >.adsPersonalcontent {
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+
+    >.adsPersonalowner {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      //color: white; //for some time
+    }
+  }
+
+}
+
+.HoveredButton {
+  display: none;
+}
+
+.HoveredLightAdsCard:hover {
+  position: relative;
+  .HoveredButton {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    background: linear-gradient(274deg, rgb(51 51 51 / 63%) 0%, #3c3c3c70 44.37%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 44.37%);
+  }
+}
+
+.HoveredDarkAdsCard:hover {
+  position: relative;
+
+  .HoveredButton {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    background: linear-gradient(274deg, rgb(51 51 51 / 63%) 0%, #3c3c3c70 44.37%);
+    background: linear-gradient(180deg, #313131 0%, #6868687d 44.37%);
+  }
+}
+
+// .card:hover {
+
+//   >.HoveredButton {
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: absolute;
+//     z-index: 101;
+//     top: 0;
+//     left: 0;
+//     border-radius: 4px;
+//     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 44.37%);
+//     background: linear-gradient(180deg,
+//         rgba(255, 255, 255, 0) 0%,
+//         #ffffff 44.37%);
+//   }
+// }

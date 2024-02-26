@@ -1,0 +1,26 @@
+.HistoryChart {
+    >.Heading {
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        font-size: 18px;
+
+    }
+}
+.Column {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    
+    >.GameName {
+        font-size: 14px;
+    }
+
+    >.GameChart {
+        font-size: 17px;
+        font-weight: 600;
+    }
+}

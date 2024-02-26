@@ -1,0 +1,16 @@
+.header{
+    height: 60px;
+    background-color: #555;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+    >.NavItem{
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        display: inline-block;
+    }
+}

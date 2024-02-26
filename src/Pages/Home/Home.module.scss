@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+
+    >.scrollingText {
+        white-space: nowrap;
+        animation: scroll 30s linear infinite;
+        color: #0e0e0e;
+        font-weight: bold;
+        font-size: 14px;
+        display: inline-block;
+    }
+}
+
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
