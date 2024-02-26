@@ -3,7 +3,6 @@ import cssStyle from './Result.module.scss';
 import moment from "moment";
 import CountdownTimer from "./CheckRemaning";
 import { useSelector } from "react-redux";
-import classNames from 'classnames';
 
 const LiveResult = () => {
     const [currentTime, setCurrentTime] = useState(moment());
@@ -20,7 +19,7 @@ const LiveResult = () => {
     const formattedTime = currentTime.format('MMM D, YYYY hh:mm:ss A');
 
     const renderLastUpdate = (lastUpdate) => (
-            <div className={classNames(cssStyle.GameSection)}>
+            <div className={cssStyle.GameSection}>
                 <span className={`${cssStyle.Game} text-light`}>{lastUpdate.value.name}</span>
                 <span className={`${cssStyle.Result} text-warning`}>{lastUpdate.value.newresult}</span>
                 <button className={`${cssStyle.Btn} btn btn-danger`}>{`${lastUpdate.value.name} Chart 2023`}</button>
@@ -29,7 +28,7 @@ const LiveResult = () => {
 
     const renderWaitingGames = () => (
         waiting.length > 0 && waiting.map((data) => (
-            <div className={classNames(cssStyle.GameSection)} key={data.value.name}>
+            <div className={cssStyle.GameSection} key={data.value.name}>
                 <span className={`${cssStyle.Game} text-light`}>{data.value.name}</span>
                 <CountdownTimer isWaiting={true} targetDate={data.value.waiting} />
                 <button className={`${cssStyle.Btn} btn btn-danger`}>{`${data.value.name} Chart 2023`}</button>
@@ -39,7 +38,7 @@ const LiveResult = () => {
 
     const renderUpcomingGames = () => (
         upcoming.length > 0 && upcoming.map((data) => (
-            <div className={classNames(cssStyle.GameSection)} key={data.value.name}>
+            <div className={cssStyle.GameSection} key={data.value.name}>
                 <span className={`${cssStyle.Game} text-light`}>{data.value.name}</span>
                 <CountdownTimer isWaiting={false} targetDate={new Date(`${moment().format('MM-DD-YYYY')} ${data.value.time}`).getTime()} />
                 <button className={`${cssStyle.Btn} btn btn-danger`}>{`${data.value.name} Chart 2023`}</button>
