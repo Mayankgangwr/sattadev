@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import cssStyle from "./AdsCard.module.scss";
-import { Button } from "@fluentui/react-northstar";
 const DarkAdsCard = ({ authStatus, adsData, position }) => {
     const currDate = new Date().getTime();
     const [isOpen, setIsOpen] = useState(false);
     const ToggleDilog = (isopen) => {
         setIsOpen(isopen);
     };
-    
-    const {cardData , id} = adsData;
+
+    const { cardData, id } = adsData;
     return (
         <>
-            {adsData!==undefined || cardData.expire>currDate ? (
+            {adsData !== undefined || cardData.expire > currDate ? (
                 <div className={`${cssStyle.DarkAdsCard} ${authStatus && cssStyle.HoveredDarkAdsCard} card px-4 py-3 bg-dark mt-1`}>
                     <div className={cssStyle.HoveredButton}>
-                        <Button onClick={() => ToggleDilog(true)} content='Edit Ads Card' primary />
+                        <button className="btn btn-primary" onClick={() => ToggleDilog(true)}>Edit Ads Card</button>
                     </div>
                     <p className={`${cssStyle.adscontent} card-title text-warning`}>{cardData.message}</p>
                     <p className={`${cssStyle.adsowner} card-title text-light`}>{cardData.owner}</p>
@@ -27,7 +26,7 @@ const DarkAdsCard = ({ authStatus, adsData, position }) => {
             ) : (
                 <div className={`${cssStyle.DarkAdsCard} ${authStatus && cssStyle.HoveredDarkAdsCard} card px-4 py-3 mt-1`}>
                     <div className={cssStyle.HoveredButton}>
-                        <Button onClick={() => ToggleDilog(true)} content='Edit Ads Card' primary />
+                        <button className="btn btn-primary" onClick={() => ToggleDilog(true)}>Edit Ads Card</button>
                     </div>
                     <p className={`${cssStyle.adsPersonalcontent} card-title text-success`}>{`पोजीशन नंबर ${position} पे कोई भी Dark Card Ads नही है अभी के लिए ये जगह खाली है अगर आपको अपना Dark Card Ads दलबना तो Call या WathsApp बात करे.`}</p>
                     <p className={`${cssStyle.adsPersonalowner} card-title text-dark`}>{`Prince Kurmi`}</p>

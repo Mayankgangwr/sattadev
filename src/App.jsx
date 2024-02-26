@@ -12,6 +12,7 @@ const App = () => {
 
   const fetchUserData = async () => {
     try {
+      
       const userData = await authService.getCurrentUser();
       if (userData) {
         const {
