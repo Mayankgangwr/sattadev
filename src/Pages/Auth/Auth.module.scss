@@ -1,0 +1,119 @@
+.mainContainer {
+    background-color: #ffffff;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.FormHeader {
+    font-size: 30px;
+    color: #050505;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.FormDescription {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    >a {
+        color: #010101;
+        text-decoration: none;
+    }
+}
+
+.authForm {
+    margin-top: 45px;
+
+    >.formGroup {
+        margin-top: 12px;
+
+        >input {
+            border-radius: 25px;
+            padding: 9px 20px;
+            border: 1px solid #737373;
+        }
+        >input:focus{
+            box-shadow: none !important;
+        }
+
+        >button {
+            text-align: center;
+            width: 100%;
+            border-radius: 25px;
+            padding: 10px 20px;
+            border: 1px solid;
+            background-color: #010101;
+            margin-top: 15px;
+        }
+    }
+
+    >.forgotPassword {
+        color: #0d0d0d !important;
+        font-weight: 500 !important;
+        margin-top: 6px;
+        >span{
+            cursor: pointer;
+        }
+    }
+}
+
+.authLogin {
+    >.Headeing {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        >.Hr {
+            width: 33%;
+        }
+
+        >span {
+            font-size: 14px;
+            font-family: "Google Sans", Roboto, Arial, sans-serif;
+            font-weight: 500;
+            color: #010101 !important;
+            text-align: center;
+        }
+    }
+
+    >.thirdPartyLogin {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        >i {
+            background-color: #050505;
+            color: #ffffff;
+            height: 55px;
+            width: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+    }
+
+
+}
+
+.authFooter {
+    >span {
+        color: #010101;
+
+        >a {
+            color: #698c61 !important;
+            text-decoration: none;
+        }
+    }
+}
+
+img {
+    width: 100%;
+}

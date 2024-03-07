@@ -11,18 +11,16 @@ const darkCardSlice = createSlice({
         setCards: (state, action) => {
             state.cardsData = action.payload;
         },
-        
+
         createCard: (state, action) => {
             state.cardsData.push(action.payload);
         },
 
         updateCard: (state, action) => {
-            if (state.cardsData.length > 0) {
-                const { id, newData } = action.payload;
-                const index = state.cardsData.findIndex((card) => card.id === id);
-                if (index !== -1) {
-                    state.cardsData[index] = { ...state[index], ...newData };
-                }
+            const { id, newData } = action.payload;
+            const cardIndex = state.cardsData.findIndex((card) => card.id === id);
+            if (cardIndex !== -1) {
+                state.cardsData[cardIndex] = { ...state.cardsData[cardIndex], ...{ id: id, cardData: newData } };
             }
         },
 

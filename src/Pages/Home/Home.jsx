@@ -21,15 +21,15 @@ const Home = () => {
         </div>
       </div>
       <Button text="सट्टा-लीक जोड़ी CLICK" btnClass="btn-warning" />
-      <DarkAdsCard authStatus={authStatus} position={0} adsData={darkCardsData[0]} />
-      <LightAdsCard authStatus={authStatus} position={0} adsData={lightCardsData[0]} />
+      <DarkAdsCard key={darkCardsData[0].id} authStatus={authStatus} position={0} adsData={darkCardsData[0]} />
+      <LightAdsCard key={lightCardsData[0].id} authStatus={authStatus} position={0} adsData={lightCardsData[0]} />
       <LightAdsCard authStatus={authStatus} position={1} adsData={lightCardsData[1]} />
       <DarkAdsCard authStatus={authStatus} position={1} adsData={darkCardsData[1]} />
       <LiveResult />
       <LightAdsCard authStatus={authStatus} position={2} adsData={lightCardsData[2]} />
       <Button text="🤩 WWW.SATTA-PLAYER.IN🤩 फ्री गेम पोस्ट वेबसाइट" btnClass="btn-info" />
       <LightAdsCard authStatus={authStatus} position={3} adsData={lightCardsData[3]} />
-      <LiveChart />
+      <LiveChart authStatus={authStatus} />
       <DarkAdsCard authStatus={authStatus} position={2} adsData={darkCardsData[2]} />
       <LightAdsCard authStatus={authStatus} position={4} adsData={lightCardsData[4]} />
       <LightAdsCard authStatus={authStatus} position={5} adsData={lightCardsData[5]} />

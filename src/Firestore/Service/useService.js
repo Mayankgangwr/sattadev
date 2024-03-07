@@ -21,10 +21,11 @@ function useService(collectionName) {
         updateDocument: async (documentID, data) => {
             try {
                 const documentRef = doc(collectionRef, documentID);
-                return await setDoc(documentRef, data);
+                await setDoc(documentRef, data);
+                return true;
             } catch (error) {
                 console.error(`Error updating document in ${collectionName}:`, error);
-                throw error;
+                return false;
             }
         },
         deleteDocument: async (documentID) => {

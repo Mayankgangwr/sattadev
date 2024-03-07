@@ -1,5 +1,5 @@
 import { auth } from "./Config";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
 
 /**
  * @class AuthService
@@ -31,6 +31,19 @@ class AuthService {
         }
     }
 
+    async updateUserProfile(displayName) {
+        try {
+            await updateProfile(auth.currentUser, { displayName, photoURL: null });
+        } catch (error) {
+            console.error("Error updating user profile:", error.message);
+            throw error;
+        }
+    }
+
+
+
+
+
     /**
      * @function login
      * @description Login user with Firebase
@@ -43,7 +56,7 @@ class AuthService {
         try {
             const { email, password } = userData;
             const userCredential = await signInWithEmailAndPassword(auth, email, password);
-            console.log("User logged in:", userCredential.user.email);
+            console.log("User logged in:", userCredential, userCredential.user.email);
             return userCredential;
         } catch (error) {
             console.error("Error logging in:", error.message);

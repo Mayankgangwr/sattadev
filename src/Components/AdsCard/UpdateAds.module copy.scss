@@ -1,0 +1,1055 @@
+.AutomationPageHeaderWelcomeHeader {
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.SectionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 32px;
+}
+
+.FilterContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.MenuStyle {
+  gap: 10px;
+  border-bottom-style: none !important;
+  background-color: #fff !important;
+  margin-top: 15px !important;
+  padding: 10px 14px !important;
+
+  >li {
+    list-style: none;
+
+    >a {
+      line-height: 2.4286;
+    }
+  }
+}
+
+.BackButton {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  min-width: auto !important;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  color: rgba(91, 95, 199, 1) !important;
+  justify-content: start !important;
+}
+
+.PrimaryButton {
+  >button {
+    border-radius: 4px !important;
+    background: #5B5FC7 !important;
+    box-shadow: 0px 1.600000023841858px 3.5999999046325684px 0px rgba(0, 0, 0, 0.28), 0px 0.30000001192092896px 0.8999999761581421px 0px rgba(0, 0, 0, 0.32) !important;
+  }
+}
+
+.TextHeader {
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  display: block;
+  line-height: 1.3;
+}
+
+.ModelTextHeader {
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  display: block;
+}
+
+.ModelHeaderSubtext {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.FilterBoxLeft {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  width: 75% !important;
+}
+
+.FilterBoxRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff !important;
+  gap: 15px;
+  width: 80px !important;
+}
+
+.FilterDropdown {
+  width: 33%;
+
+  >div {
+    width: 100% !important;
+    background-color: #fff !important;
+
+    >div {
+      >button {
+        >span {
+          color: rgba(147, 147, 147, 1);
+        }
+      }
+    }
+
+    >ul {
+      width: 100% !important;
+    }
+  }
+}
+
+.FilterInput {
+  width: 33% !important;
+
+  >div {
+    >input {
+      width: 100% !important;
+      background-color: #fff !important;
+    }
+  }
+}
+
+.container {
+  width: 100% !important;
+}
+
+.mt0 {
+  margin-top: 0px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mb0 {
+  margin-bottom: 0px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.gap5 {
+  gap: 5px;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.col3 {
+  flex: 0 0 auto !important;
+  width: 33.33% !important;
+  margin-top: 1%;
+}
+
+.Card {
+  width: 97% !important;
+  background-color: #fff !important;
+  max-height: 300px !important;
+  box-shadow: 0px 0.6px 1.8px rgba(0, 0, 0, 0.11), 0px 3.2px 7.2px rgba(0, 0, 0, 0.13) !important;
+  margin: 0% 2% 2% 2% !important;
+  transition: filter 0.3s;
+  padding: 15px !important;
+}
+
+.CardBody {
+  margin-bottom: 15px !important;
+}
+
+.LightBoxShadow {
+  box-shadow: 0px 0px 3px #ababab !important;
+}
+
+.Cardfirstchild {
+  margin-left: 0 !important; // Remove top margin for the first child
+}
+
+.Cardlastchild {
+  margin-right: 0 !important; // Remove top margin for the first child
+}
+
+.CardHeader {
+  display: flex !important;
+  justify-content: start;
+  gap: 20px !important;
+  align-items: center;
+  padding: 0;
+}
+
+.CardHeaderText {
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0em;
+}
+
+.CardDescriptionText {
+  font-size: 14px !important;
+  // max-width: 300px !important;
+  padding-left: 0px !important;
+  padding-top: 10px !important;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.CardDescriptionText1 {
+  font-size: 14px;
+  // max-width: 300px !important;
+  padding-left: 0px !important;
+  padding-top: 10px !important;
+  color: rgba(97, 97, 97, 1) !important;
+}
+
+.CardFooter {
+  display: flex !important;
+  gap: 15px;
+  margin: 10px 0 0;
+}
+
+.FooterButton {
+  padding: 4px, 15px, 4px, 15px !important;
+  color: rgba(68, 71, 145, 1) !important;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 4px !important;
+}
+
+.HoveredButton {
+  display: none;
+}
+
+.Addcustomtemplate {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 66px;
+
+  >.addButton {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50%;
+    background-color: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1) !important;
+    cursor: pointer;
+  }
+}
+
+.Card:hover {
+  >.HoveredButton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 44.37%);
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 44.37%);
+  }
+}
+
+.FormLabel {
+  width: 100%;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(72, 70, 68, 1);
+  display: flex;
+  align-items: end;
+  line-height: 20px;
+}
+
+.FormDropdown {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 7px !important;
+
+  >div {
+    width: 100% !important;
+
+    >div {
+      >button {
+        >span {
+          color: rgba(147, 147, 147, 1);
+        }
+      }
+    }
+
+    >ul {
+      width: 100% !important;
+    }
+  }
+}
+
+.AlertBox {
+  color: rgb(21, 21, 21) !important;
+  background: #ffffff !important;
+  padding: 9px 15px !important;
+  margin-top: 20px;
+
+  >span {
+    >svg {
+      width: 25px !important;
+      height: 25px !important;
+    }
+  }
+}
+
+.ActiveAlertBox {
+  color: rgba(88, 90, 150, 1) !important;
+  background: linear-gradient(0deg, #f1f1f5, #e8e8ee) !important;
+  border: 1px solid rgba(189, 189, 230, 1) !important;
+  padding: 9px 15px !important;
+  margin-top: 20px;
+
+  >span {
+    >svg {
+      width: 25px !important;
+      height: 25px !important;
+    }
+  }
+}
+
+.AutomationDailog {
+  width: 100%;
+  max-width: 450px !important;
+  height: auto;
+  display: flex !important;
+  padding: 20px !important;
+
+  >div {
+    margin-bottom: 0 !important;
+  }
+}
+
+.AutomationDailogFrom {
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between !important;
+}
+
+.AutomationDailogFromDark {
+  :global .p-menuitem-link {
+    background-color: transparent !important;
+
+    :global .p-steps-title {
+      color: #fff !important;
+    }
+  }
+
+  :global .p-highlight {
+    .p-steps-title {
+      color: #5b5fc7 !important;
+    }
+  }
+
+  .FormLabel,
+  label {
+    color: #fff;
+  }
+
+  .AlertBox {
+    border-color: #424242 !important;
+    background-color: #424242 !important;
+    color: #d2d2d2 !important;
+  }
+
+  .ActiveAlertBox {
+    background: rgb(98, 100, 167) !important;
+    border-color: rgb(98, 100, 167) !important;
+    color: #fff !important;
+  }
+
+  .AzureFormField {
+    background-color: transparent !important;
+
+    input {
+      background-color: #424242 !important;
+    }
+  }
+
+  .mailTemplateSelectDropdown {
+
+    >div>div>button>span {
+      color: #fff !important;
+    }
+  }
+
+}
+
+.FormButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(209, 209, 209, 0.43);
+  padding-top: 22px;
+}
+
+.FormDetailsInput {
+  width: 100% !important;
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+
+  >div {
+    >input {
+      width: 100% !important;
+    }
+  }
+}
+
+.AzureFormField {
+  border-radius: 4px !important;
+  background-color: #f5f5f5 !important;
+  padding: 16px 10px 12px !important;
+}
+
+.AzureFromInput {
+  >label {
+    margin-bottom: 5px !important;
+  }
+
+  >div {
+    >input {
+      width: 100% !important;
+      background-color: #fff !important;
+    }
+  }
+}
+
+.AzureEnableDailog {
+  box-shadow: 0px 6.400000095367432px 14.399999618530273px 0px rgba(0, 0, 0, 0.13),
+    0px 1.2000000476837158px 3.5999999046325684px 0px rgba(0, 0, 0, 0.11);
+
+  >div {
+    margin-bottom: 0 !important;
+  }
+}
+
+.AzureEnableButton {
+  display: flex !important;
+  gap: 15px !important;
+  margin-top: 35px !important;
+}
+
+.AutomationTable {
+  margin-top: 20px;
+}
+
+.TableUpperBox {
+  height: 55px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+
+  >.TableUpperBoxText {
+    height: 100%;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(72, 70, 68, 1);
+    display: flex;
+    align-items: center;
+  }
+
+  >.TableUpperBoxSearch {
+    width: 276px !important;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+}
+
+.switchBg {
+  background-color: transparent !important;
+}
+
+.textDisplaydata {
+  .textDiscription {
+    padding: 0 !important;
+    color: #6163a6 !important;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .textDiscription:hover {
+    // color: #5b5fc7 !important;
+    // text-decoration: underline !important;
+  }
+
+  span {
+    font-weight: 400;
+  }
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Define the order of the elements using :nth-child */
+.headStyle span:nth-child(1) {
+  order: 1;
+  /* First Span */
+}
+
+.headStyle span:nth-child(2) {
+  order: 2;
+  /* Second Span */
+}
+
+.headStyle div:nth-child(3) {
+  order: 3;
+  /* Last Div */
+}
+
+.headStyle {
+  border-right: 1px solid #d0d2ff !important;
+}
+
+.headCentertStyle {
+  border-right: 1px solid #d0d2ff !important;
+
+  >div {
+    justify-content: center !important;
+  }
+}
+
+.Pagination {
+  padding-right: 20px !important;
+}
+
+.ItemTableBody {
+  height: 60px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.ItemTableBody1 {
+  height: 60px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  border-right: 1px solid #d0d2ff !important;
+}
+
+.multipleSelectTableHeader {
+  justify-content: space-between;
+  background-color: #e8ebfa !important;
+  border-right: 1px solid #d0d2ff !important;
+  padding: 6px !important;
+
+  >.p-column-header-content {
+    justify-content: space-between;
+    background-color: #e8ebfa !important;
+  }
+
+  >div {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+
+    >span {
+      order: 2;
+    }
+
+    >div {
+      order: 1;
+    }
+  }
+}
+
+.TbodyItemCenter {
+  height: 60px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  text-align: center !important;
+}
+
+.TableobjectName {
+  color: #5b5fc7 !important;
+  font-family: Segoe UI;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.TableStatusInProgress {
+  color: #ca8e1b !important;
+  font-family: Segoe UI;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.TableStatusError {
+  color: #c4314b !important;
+  font-family: Segoe UI;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.TableStatusCompleted {
+  color: #13a10e !important;
+  font-family: Segoe UI;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.TableStatusInProgressLoder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  font-size: 10px;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  >span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+
+.TableStatusInProgressLoder1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  font-size: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0.5px solid #e8ac39;
+}
+
+.ActionMenu {
+  padding: 0;
+}
+
+.InactiveTeams {
+  cursor: pointer;
+}
+
+.InactiveTeams:hover {
+  text-decoration: underline;
+  color: #5b5fc7;
+}
+
+.AutomationBreadcrumb {
+  display: flex;
+}
+
+.AutomationBreadcrumbItem {
+  cursor: pointer;
+}
+
+.AutomationBreadcrumbItem:hover {
+  color: #5b5fc7;
+  text-decoration: underline;
+}
+
+.InactiveTeamsCardBody {
+  padding-bottom: 15px;
+  width: 100%;
+  min-height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.InactiveTeamsCardBodyContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  min-height: 190px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+
+  >.Number {
+    color: #5b5fc7;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 32px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 14px;
+  }
+
+  >span {
+    color: var(--light-theme-text-primary, #242424);
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+.InactiveTeamsContent3 {
+  display: flex;
+  padding: 14px 20px 14px 12px;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+
+  >.InactiveTeamsContent3Texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    >.InactiveTeamsContent3TextHeader {
+      color: #5b5fc7;
+      font-family: Segoe UI;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 12px;
+    }
+  }
+}
+
+.Anyautomationmissing {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.AnyautomationmissingTable {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: start;
+  margin-top: 8px;
+}
+
+.SubmitBtn {
+  width: 150px !important;
+  align-items: center !important;
+}
+
+.FlexItemCenter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ApprovalUncheckedDarkTheme {
+  color: #ffffff !important;
+  margin: 0 0 0 23%;
+
+  :global .ui-checkbox__indicator {
+    background-color: white;
+  }
+}
+
+.ApprovalUncheckedDarkTheme:hover {
+  :global .ui-checkbox__indicator::before {
+    border-color: rgb(200, 198, 196) !important;
+  }
+}
+
+.mailTemplateDropdownLabel {
+  margin-top: 10px !important;
+}
+
+.mailTemplateSelectDropdown {
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 7px !important;
+
+  >div {
+    width: 100% !important;
+
+    >div {
+      >button {
+        >span {
+          color: rgb(48, 48, 48);
+        }
+      }
+    }
+
+    >ul {
+      width: 100% !important;
+    }
+  }
+}
+
+.SectionDescriptionTextDark3Line {
+  height: 40px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(72, 70, 68, 1);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 3px;
+  padding-right: 15px;
+}
+
+.LightheadStyle {
+  border-right: 1px solid #d0d2ff !important;
+}
+
+
+
+.TableDark {
+  background-color: rgb(59, 58, 57);
+
+  .headCentertStyle,
+  .headStyle,
+  th {
+
+    background-color: transparent !important;
+    border-color: #000 !important;
+
+    span,
+    svg {
+      color: #fff !important;
+    }
+  }
+
+  tr {
+    background-color: transparent !important;
+  }
+
+  td {
+    background-color: transparent !important;
+    border-color: #000 !important;
+    color: #fff !important;
+  }
+
+}
+
+.CardDark {
+  background-color: rgb(59, 58, 57) !important;
+
+  &:hover {
+    .HoveredButton {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000 44.37%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000 44.37%);
+    }
+  }
+}
+
+// .chipsInput {
+//   margin-top: 20px !important;
+//   display: flex;
+//   flex-direction: column;
+
+//   &>label {
+//     color: var(--light-theme-text-secondary, #484644);
+//     font-size: 14px;
+//     font-style: normal;
+//     font-weight: 600;
+//     line-height: 14px;
+//     margin-bottom: 10px;
+//     margin-left: 2px;
+//   }
+
+//   >div {
+//     width: 100%;
+//     margin-top: 5px !important;
+//     display: block !important;
+
+//     >ul {
+//       border-radius: 3px;
+//       background: rgb(243, 242, 241);
+//       gap: 8px;
+//       border: none;
+//       max-height: 130px;
+//       overflow-y: auto;
+//       padding: 6px 12px;
+//       width: 100%;
+
+//       &>.p-focus {
+//         box-shadow: none !important;
+//         border: none;
+//         outline: none;
+//       }
+
+//       >.p-chips-token {
+//         margin-right: 0 !important;
+//         border-radius: 38px;
+//         background: #FFF;
+//         height: 24px;
+//         padding: 4px;
+//         padding-left: 8px;
+
+//         >svg {
+//           color: #616161 !important;
+//         }
+
+//         >.p-chips-token-label {
+//           color: var(--text-primary, #242424);
+//           font-family: Segoe UI;
+//           font-size: 12px;
+//           font-style: normal;
+//           font-weight: 400;
+//           line-height: 12px;
+//         }
+//       }
+//     }
+
+//   }
+// }
+
+.DarkchipsInput {
+
+  &>label {
+    color: #fff !important;
+  }
+
+  >div {
+    >ul {
+      background: rgb(32, 31, 31) !important;
+      border: 1px solid rgb(74, 74, 74) !important;
+
+      >li {
+        >input {
+          color: #fcfcfc !important;
+        }
+
+        ;
+      }
+
+      >.p-chips-token {
+
+        background: #FFF;
+
+
+        >svg {
+          color: #efefef !important;
+        }
+
+        >.p-chips-token-label {
+          color: var(--text-primary, #efefef);
+        }
+      }
+    }
+
+  }
+}
+
+.BoxShadow {
+  box-shadow: 0px 0.6px 1.8px rgba(0, 0, 0, 0.11), 0px 3.2px 7.2px rgba(0, 0, 0, 0.13);
+}
+
+.ModelFormHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.DatePickerContainer {
+  display: flex;
+  width: 100%;
+
+  >div {
+    width: 100%;
+
+    >div {
+      width: inherit;
+
+      >input {
+        width: inherit;
+      }
+    }
+  }
+}

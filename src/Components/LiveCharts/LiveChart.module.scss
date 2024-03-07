@@ -10,6 +10,7 @@
 
     >.Table {
         margin-bottom: 0;
+
         >thead tr th {
             border-right: 1px solid #909090;
             text-align: center;
@@ -44,3 +45,23 @@
         }
     }
 }
+
+.ConfirmDilog {
+    width: 100%;
+    max-width: 360px !important;
+    height: auto;
+    display: flex !important;
+    padding: 10px !important;
+  
+    >.DialogBody {
+      margin-bottom: 0 !important;
+      width: 100%;
+  
+      >.actionBtn{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+
+      }
+    }
+  }

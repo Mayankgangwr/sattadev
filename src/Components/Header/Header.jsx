@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 const Header = (logo) => {
     const [navbarToggle, setNavbarToggle] = useState(false);
     const [dropdownToggle, setDropdownToggle] = useState(false);
-    const authStatus = useSelector((state) => state.auth.status);
+    const auth = useSelector((state) => state.auth);
 
     return (
         <>
@@ -29,7 +29,7 @@ const Header = (logo) => {
                     <div className="collapse navbar-collapse" style={{ display: navbarToggle ? 'block' : 'none' }} id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                            <Link className="nav-link" to="/">
+                                <Link className="nav-link" to="/">
                                     Home
                                 </Link>
                             </li>
@@ -48,14 +48,14 @@ const Header = (logo) => {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
-                                    {authStatus ? 'Admin' : "Login"}
+                                    {auth.status ? auth.userData.displayName : "Login"}
                                 </Link>
                                 <ul
                                     style={{ display: dropdownToggle ? 'block' : 'none' }}
                                     className="dropdown-menu bg-secondary"
                                     aria-labelledby="navbarDropdownMenuLink"
                                 >
-                                    {authStatus ?
+                                    {auth.status ?
                                         <>
                                             <li>
                                                 <Link className="dropdown-item" to="/games">

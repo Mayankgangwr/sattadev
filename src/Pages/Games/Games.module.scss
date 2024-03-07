@@ -1,0 +1,16 @@
+.container {
+    width: 100%;
+
+    >.GamesHeader {
+        display: flex;
+        justify-content: end;
+        height: 55px;
+        padding: 0px 5px;
+        background-color: #b17a7a;
+        align-items: center;
+
+        >.btn {
+            padding: 5px 8px !important;
+        }
+    }
+}

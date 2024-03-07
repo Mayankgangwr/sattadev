@@ -1,0 +1,97 @@
+.AutomationDailog {
+  width: 100%;
+  max-width: 450px !important;
+  height: auto;
+  display: flex !important;
+  padding: 20px !important;
+
+  >.DialogBody {
+    margin-bottom: 0 !important;
+    width: 100%;
+
+    >.DialogTitle {
+      width: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+
+      >span {
+        font-family: Segoe UI;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      >svg {
+        font-family: Segoe UI;
+        font-size: 24px;
+        font-weight: 900;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+    }
+
+    >.DialogContent {
+      >.FormField {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: start;
+        margin-top: 12px;
+
+        >label {
+          font-weight: 400;
+          font-size: 14px;
+          color: #101010;
+        }
+
+        >.Input,
+        .Textarea {
+          width: 100% !important;
+          background-color: #b1b1b1 !important;
+          border: none !important;
+        }
+
+      }
+
+      >.DatePickerContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+        margin-bottom: 10px;
+
+        >.DatePicker {
+          width: 97% !important;
+          margin-top: 12px;
+          text-align: start;
+
+          >label {
+            font-weight: 400;
+            font-size: 14px;
+            color: #101010;
+          }
+
+          >.Input {
+            width: inherit !important;
+            background-color: #b1b1b1 !important;
+            border: none !important;
+          }
+
+        }
+      }
+
+      >.FormButton {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(209, 209, 209, 0.43);
+        padding-top: 22px;
+      }
+
+
+    }
+  }
+}

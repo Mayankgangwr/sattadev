@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { addResultInRangeController, darkAdsCardController, lightAdsCardController, gameController, authService, resultChartController } from "./Firestore";
 import { login, logout, setDarkCards, setLightCards, setLiveResult, setCurrMonth, setGames } from "./Store";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Header, Home, YearChart, GameChart } from "./Pages";
+import { Header, Home, YearChart, GameChart, Login, Games } from "./Pages";
 import { useDispatch } from "react-redux";
 import moment from "moment";
 import './App.css';
@@ -12,7 +12,7 @@ const App = () => {
 
   const fetchUserData = async () => {
     try {
-      
+
       const userData = await authService.getCurrentUser();
       if (userData) {
         const {
@@ -143,12 +143,15 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="/gamechart/:gamename" element={<GameChart />} />
           <Route path="/yearchart/:year" element={<YearChart />} />
+          <Route path="/games" element={<Games />} />
+         
           {/* <Route path="/custom" element={
             <AuthLayout authentication={false}>
               <GameResult />
             </AuthLayout>}>
           </Route> */}
         </Route>
+         <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   ) : null;

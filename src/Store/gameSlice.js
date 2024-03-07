@@ -11,7 +11,7 @@ const gameSlice = createSlice({
         setGames: (state, action) => {
             state.gamesData = action.payload;
         },
-        
+
         createGame: (state, action) => {
             state.gamesData.push(action.payload);
         },
@@ -21,7 +21,7 @@ const gameSlice = createSlice({
                 const { id, newData } = action.payload;
                 const index = state.gamesData.findIndex((card) => card.id === id);
                 if (index !== -1) {
-                    state.gamesData[index] = { ...state[index], ...newData };
+                    state.gamesData[index] = { ...state.gamesData[index], ...newData };
                 }
             }
         },
